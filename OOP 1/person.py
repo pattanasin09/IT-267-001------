@@ -16,6 +16,9 @@ class Person:
     def show(self):
         print(f'Name:{self.name} Gender:{self.gender} Profession:{self.profession} Study: {self.hours}')
 
+    def __del__(self):
+        print(f'Object Destroyed')
+
 #create object
 jessa = Person('Jessa','Female','Software Engineer','10')
 jessa.show()
