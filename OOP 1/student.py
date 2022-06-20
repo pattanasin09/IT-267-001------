@@ -1,6 +1,7 @@
 class Daigram :
-
-    def study(self,id:str,name:str,major:str) :
+    #major:str = "IT"
+    #major = "IT"
+    def study(self,id:str,name:str,major:str = 'IT') : #กำหนดค่าเริ่มต้นให้
         self.id = id
         self.name = name
         self.major = major
@@ -18,10 +19,15 @@ if __name__ == "__main__":
     jess = Daigram()
     jess.study(111,"Jessical",'IT')
     jess.dispay_deteil()
-
+    
     john = Daigram()
     john.study(112,"John","MKT")
     john.dispay_deteil()
+
+    amy = Daigram()
+    amy.study(113,'Amy')
+    amy.dispay_deteil()
+
     
 
 
