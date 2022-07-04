@@ -1,4 +1,3 @@
-from re import L
 from animal import Animal
 
 class Dog(Animal):
