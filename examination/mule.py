@@ -19,12 +19,12 @@ class Mule(Horse,Donkey):
         print(f'Weight :{self.weight} kg')
 
 mule1 =Mule('Mumu','Blue-eyed cream',3,200)
-print('**** Meme info ****')
+print(f'**** Mumu Info ****')
 mule1.show_name()
 mule1.show_info()
 
 mule2 = Mule('Meme','Palomino',1,120.7)
-print('**** Meme info ****')
+print(f'**** Meme Info ****')
 mule2.sound()
 mule2.show_name()
 mule2.show_info()
