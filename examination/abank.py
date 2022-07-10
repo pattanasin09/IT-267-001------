@@ -39,9 +39,9 @@ class ABank(Bank):
         return (self.loanamount + self.flat_rate()) /24
     def display_interest(self):
         print(f'**** {self.bankname} Loan Info ****')
-        print(f'Loan :{self.loanamount:,} baht')
+        print(f'Loan :{self.loanamount:,.2f} baht')
         print(f'Rate:{self.loanrate:.2f}%')
         print(f'Year:{self.loanyear}')
         print('--Interest--')
-        print(f'Interest : {self.flat_rate():.2f} bath')
-        print(f'Monthly Repayment : {self.flat_rate1():.2f} baht')
+        print(f'Interest : {self.flat_rate():,.2f} bath')
+        print(f'Monthly Repayment : {self.flat_rate1():,.2f} baht')
