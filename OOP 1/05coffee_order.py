@@ -34,6 +34,8 @@ class CoffeeOrder :
         CoffeeOrder.total = self.num * self.price
 
     def display_detail(self):
+        self.check_menu()
+        self.compute_price()
         return f'{self.customer_name},{self.menu}({self.num}{self.size}*${self.price}) => ${CoffeeOrder.total}'
     def __del__(Self):
         print(f'Object Destroyed')
@@ -41,6 +43,7 @@ class CoffeeOrder :
 if __name__=="__main__":
     John = CoffeeOrder('John','es')
     Mary = CoffeeOrder('Mary','AM',2,'l')
+    
 
     print(John.display_detail())
     print(Mary.display_detail())
